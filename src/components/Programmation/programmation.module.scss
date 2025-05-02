@@ -1,3 +1,6 @@
+.programmation_languages{
+  background-color: white;
+}
 .section_languages {
     display: flex;
     align-items: center;
@@ -5,8 +8,6 @@
     gap: 0rem;
     height: 56vh;
     margin-top: 100px;
-    overflow: hidden;
-  
     .container_languages {
       display: flex;
       flex: 1;
