@@ -30,7 +30,7 @@
   .container_letter img {
     object-fit: contain;
     width: 80%;
-    max-height: 1000px;
+    max-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
