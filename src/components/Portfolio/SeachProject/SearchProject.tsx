@@ -5,6 +5,7 @@ import { StaticImageData } from 'next/image';
 import { openclassrooms1, openclassrooms2, openclassrooms3, projects } from "../../Data";
 import CardSection from '../CardSection';
 import styles from './searchProject.module.scss';
+import { useLanguage } from '@/components/Context/LanguageContext';
 
 // Interface pour les données des projets (alignée avec CardSection)
 interface CardData {
@@ -20,7 +21,7 @@ interface CardData {
 }
 
 const SearchProject: React.FC = () => {
-  const language = "FR";
+  const { language } = useLanguage();
   // Combinaison de tous les projets en une seule liste de base
   const baseAllProjects: CardData[] = [...openclassrooms1, ...openclassrooms2, ...openclassrooms3, ...projects] as CardData[];
   const [searchData, setSearchData] = useState<CardData[]>(baseAllProjects);

@@ -6,6 +6,7 @@ import styles from "./portfolio.module.scss";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
+import { useLanguage } from "../Context/LanguageContext";
 
 // Define types for the data structure
 interface ProjectData {
@@ -19,7 +20,7 @@ interface LanguageContextType {
 }
 
 const ReactFormation = () => {
-  const language = 'FR';
+  const {language} = useLanguage;
   const [isopen, setIsOpen] = useState<boolean>(false);
 
   const IMG: StaticImageData = openclassrooms2[0].image;

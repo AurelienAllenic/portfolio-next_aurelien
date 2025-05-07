@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { openclassrooms3 } from "../Data";
 import CardSection from './CardSection';
-//import SearchProject from './SeachProject/SearchProject';
 import styles from "./portfolio.module.scss";
 import SearchProject from './SeachProject/SearchProject';
+import { useLanguage } from '../Context/LanguageContext';
 
 // Interface pour les données des cartes (alignée avec CardSection)
 interface CardData {
@@ -29,7 +29,7 @@ const typedOpenclassrooms3: CardData[] = openclassrooms3 as CardData[];
 
 const PythonFormation: React.FC<PythonFormationProps> = () => {
   const [isopen, setIsOpen] = useState<boolean>(false);
-  const language = "FR";
+  const {language} = useLanguage()
   const IMG = typedOpenclassrooms3[0].image;
 
   return (

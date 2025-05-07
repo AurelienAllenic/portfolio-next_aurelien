@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./contact.module.scss";
 import { FaArrowRight } from "react-icons/fa";
-//import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Context/LanguageContext";
 
 // Define type for the context
 interface LanguageContextType {
@@ -18,8 +18,7 @@ interface FormData {
 }
 
 const Contact = () => {
-  //const { language } = useLanguage() as LanguageContextType;
-  const language = 'FR'
+  const { language } = useLanguage() as LanguageContextType;
   const [isError, setIsError] = useState<boolean>(false);
   const [showConfirmation, setShowConfirmation] = useState<boolean>(false);
   const form = useRef<HTMLFormElement>(null);

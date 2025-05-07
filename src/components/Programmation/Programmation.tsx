@@ -4,12 +4,11 @@ import { useState } from 'react';
 import styles from "./programmation.module.scss";
 import FrontEnd from './FrontEnd';
 import BackEnd from './BackEnd';
-//import { useLanguage } from '../Context/LanguageContext.jsx';
+import { useLanguage } from '@/components/Context/LanguageContext';
 
 const Programmation = () => {
-  //const { language } = useLanguage();
+  const { language } = useLanguage();
   const [codingLanguage, setCodingLanguage] = useState('Front End');
-    const language = 'FR'
   return (
     <>
       <a className={styles.anchor} id='languages'></a>

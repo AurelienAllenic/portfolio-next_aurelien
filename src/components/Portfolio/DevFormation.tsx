@@ -3,7 +3,7 @@
 import { openclassrooms1 } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
-//import { useLanguage } from '../Context/LanguageContext';
+import { useLanguage } from '../Context/LanguageContext';
 import { IoIosArrowUp } from "react-icons/io";
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
@@ -20,8 +20,7 @@ interface LanguageContextType {
 }
 
 const DevFormation = () => {
-  //const { language } = useLanguage() as LanguageContextType;
-  const language = 'FR'
+  const { language } = useLanguage();
   const [isopen, setIsOpen] = useState<boolean>(false);
 
   const IMG: StaticImageData = openclassrooms1[0].image;

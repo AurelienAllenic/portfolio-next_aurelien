@@ -1,3 +1,5 @@
+"use client";
+
 import About from "@/components/About/About";
 import styles from "./page.module.scss";
 import CvLetter from "@/components/CvLetter/CvLetter";
@@ -8,18 +10,21 @@ import './page.scss'
 import DevFormation from "@/components/Portfolio/DevFormation";
 import PersoProjects from "@/components/Portfolio/PersoProjects";
 import Contact from "@/components/Contact/Contact";
+import { LanguageProvider } from "@/components/Context/LanguageContext";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <About  />
-      <CvLetter />
-      <Programmation />
-      <PythonFormation />
-      <ReactFormation />
-      <DevFormation />
-      <PersoProjects />
-      <Contact />
+      <LanguageProvider>
+        <About  />
+        <CvLetter />
+        <Programmation />
+        <PythonFormation />
+        <ReactFormation />
+        <DevFormation />
+        <PersoProjects />
+        <Contact />
+      </LanguageProvider>
     </div>
   );
 }

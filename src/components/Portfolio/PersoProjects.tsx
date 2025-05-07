@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import CardSection from './CardSection';
 import { projects } from "../Data";
 import styles from "./portfolio.module.scss";
-//import { useLanguage } from '../Context/LanguageContext';
+import { useLanguage } from '../Context/LanguageContext';
 import { IoIosArrowUp } from "react-icons/io";
 import { StaticImageData } from 'next/image';
 
@@ -21,8 +21,7 @@ interface LanguageContextType {
 }
 
 const PersoProjects = () => {
-  //const { language } = useLanguage() as LanguageContextType;
-  const language = 'FR'
+  const { language } = useLanguage();
   const [isopen, setIsOpen] = useState<boolean>(false);
 
   const IMG: StaticImageData = projects[0].image;

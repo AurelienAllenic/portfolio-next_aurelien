@@ -2,34 +2,27 @@ import React from "react";
 import Image from "next/image";
 import IMG from "../../assets/about.jpg";
 import styles from "./about.module.scss";
-/*
 import { useLanguage } from "../Context/LanguageContext";
-import ChangeLanguage from "./ChangeLanguage";
-*/
 import Logos from "./Logos";
 import Links from "./Links";
 import Navbar from "../Nav/Nav";
+import { ChangeLanguage } from "./ChangeLanguage";
 
 type DocumentType = string;
 
 const About: React.FC = () => {
- // const { language } = useLanguage();
+  const { language } = useLanguage();
 
   const downloadDocument = (document: DocumentType): void => {
     window.open(document, "_blank");
   };
-const language = 'FR'
+
   return (
     <>
       <Navbar />
       <a className={styles.anchor} id="home"></a>
       <section className={styles.container_about}>
-        {
-            /*
             <ChangeLanguage />
-            */
-        }
-        
         <div className={styles.container_title_about}>
           <h1 className={styles.main_title_about}>Aurélien Allenic</h1>
           <h2 className={styles.sub_title}>

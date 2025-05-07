@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 import styles from "./portfolio.module.scss";
-//import { useLanguage } from '../Context/LanguageContext';
+import { useLanguage } from '../Context/LanguageContext';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io";
@@ -38,8 +38,7 @@ interface LanguageContextType {
 }
 
 const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
-  //const { language } = useLanguage() as LanguageContextType;
-  const language = 'FR'
+  const { language } = useLanguage() as LanguageContextType;
   const cardsRef = useRef<(HTMLElement | null)[]>([]);
   const [touchPosition, setTouchPosition] = useState<number | null>(null);
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(null);
