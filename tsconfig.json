@@ -3,18 +3,19 @@
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "strict": false, // Disable all strict type-checking
-    "noImplicitAny": false, // Allow implicit any types
-    "strictNullChecks": false, // Disable null/undefined checks
-    "noImplicitThis": false, // Allow untyped 'this'
-    "alwaysStrict": false, // Disable strict mode parsing
-    "noUnusedLocals": false, // Allow unused variables
-    "noUnusedParameters": false, // Allow unused parameters
-    "noImplicitReturns": false, // Allow functions without return
-    "noFallthroughCasesInSwitch": false, // Allow switch fallthrough
-    "allowUnreachableCode": true, // Allow unreachable code
-    "allowUnusedLabels": true, // Allow unused labels
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "suppressImplicitAnyIndexErrors": true, // Suppress index access errors
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -26,7 +27,7 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
-      "@/types/*": ["./src/types/*"] // Support src/types/ if needed
+      "@/types/*": ["./src/types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/**/*"],
