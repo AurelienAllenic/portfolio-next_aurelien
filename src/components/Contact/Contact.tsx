@@ -31,9 +31,9 @@ const Contact = () => {
     if (!form.current) return;
   
     const formData: FormData = {
-      name: form.current.name.value,
-      email: form.current.email.value,
-      message: form.current.message.value,
+      name: (form.current.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.current.elements.namedItem("email") as HTMLInputElement).value,
+      message: (form.current.elements.namedItem("message") as HTMLTextAreaElement).value,
     };
   
     try {
