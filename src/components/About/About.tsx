@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import IMG from "../../assets/about.jpg";
 import styles from "./about.module.scss";
 import { useLanguage } from "../Context/LanguageContext";
 import Logos from "./Logos";
@@ -33,7 +32,7 @@ const About: React.FC = () => {
         <div className={styles.sub_container_about}>
           <div className={styles.container_img_about}>
             <Image 
-              src={IMG} 
+              src='/assets/about.jpg' 
               alt="Aurélien Allenic" 
               width={500}
               height={500}

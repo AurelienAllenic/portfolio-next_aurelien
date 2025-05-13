@@ -1,38 +1,7 @@
-import Booki from "../assets/portfolio/booki.webp";
-import Ohmyfood from "../assets/portfolio/ohmyfood.jpg";
-import Lapanthere from "../assets/portfolio/lapanthere.jpg";
-import Kanap from "../assets/portfolio/kanap.webp";
-import Piiquante from "../assets/portfolio/piiquante.webp";
-import Groupomania from "../assets/portfolio/groupomania.webp";
-import GameOn from "../assets/portfolio/gameon.webp";
-import Fisheye from "../assets/portfolio/fisheye.webp";
-import Plats from "../assets/portfolio/plats.webp";
-import Paro from "../assets/portfolio/paro.webp";
-import Cleo from "../assets/portfolio/cleo.webp";
-import Claquettes from "../assets/portfolio/claquettes.webp";
-import Linconnu from "../assets/portfolio/linconnu.webp";
-import Kasa from "../assets/portfolio/kasa.jpeg";
-import LearnHome from "../assets/portfolio/learnhome.jpeg";
-import Wealthealth from "../assets/portfolio/wealthealth.jpeg";
-import Sportsee from "../assets/portfolio/sportsee.jpeg";
-import ArgentBank from "../assets/portfolio/argentBank.jpeg";
-import BooksToScrape from "../assets/portfolio/booksToScrape.jpeg";
-import HomeSkolar from "../assets/portfolio/homeSkolar.jpeg";
-import ChessTournament from "../assets/portfolio/chessTournament.jpeg";
-import JustStreamIt from "../assets/portfolio/justStreamIt.jpeg";
-import AlgoInvestAndTrade from "../assets/portfolio/algoInvest&Trade.jpeg";
-import LitRevu from "../assets/portfolio/litRevu.jpeg";
-import SoftDesk from "../assets/portfolio/softDesk.jpeg";
-import GudLft from "../assets/portfolio/gudLft.jpeg";
-import CahierDesCharges from "../assets/HomeSkolar/cahier_des_charges.pdf";
-import BacklogProduit from "../assets/HomeSkolar/backlog_product.pdf";
-import EpicEvents from "../assets/portfolio/epic_events.webp";
-import Orange from "../assets/portfolio/orange.webp";
-
 export const openclassrooms1 = [
   {
     id: 1,
-    image: Booki,
+    image: "/assets/portfolio/booki.webp",
     title: "Booki, projet de site de réservation hôtelier réalisé en HTML/CSS",
     titleEn: "Booki, creation of a hostel booking project with HTML/CSS",
     github: "https://github.com/AurelienAllenic/Booki",
@@ -43,7 +12,7 @@ export const openclassrooms1 = [
   },
   {
     id: 2,
-    image: Ohmyfood,
+    image: "/assets/portfolio/ohmyfood.jpg",
     title: "Ohmyfood, site gastronomique réalisé en HTML, CSS et SCSS",
     titleEn: "Ohmyfood, gastronomic website with HTML, CSS and SCSS",
     github: "https://github.com/AurelienAllenic/AurelienAllenic.github.io",
@@ -54,7 +23,7 @@ export const openclassrooms1 = [
   },
   {
     id: 3,
-    image: Lapanthere,
+    image: "/assets/portfolio/lapanthere.jpg",
     title:
       "Lapanthere, site de web design basée à Lyon, projet d'amélioration SEO d'un site existant",
     titleEn:
@@ -67,7 +36,7 @@ export const openclassrooms1 = [
   },
   {
     id: 4,
-    image: Kanap,
+    image: "/assets/portfolio/kanap.webp",
     title: "Kanap, site e-commerce réalisé en javaScript HTML, CSS",
     titleEn: "Kanap, e-commerce website with javaScript HTML, CSS",
     github: "https://github.com/AurelienAllenic/kanap-p5-openclassrooms",
@@ -78,7 +47,7 @@ export const openclassrooms1 = [
   },
   {
     id: 5,
-    image: Piiquante,
+    image: "/assets/portfolio/piiquante.webp",
     title:
       "Hot-takes, api de like et partage de sauces pimentées réalisé en nodeJs et en Javascript",
     titleEn:
@@ -91,7 +60,7 @@ export const openclassrooms1 = [
   },
   {
     id: 6,
-    image: Groupomania,
+    image: "/assets/portfolio/groupomania.webp",
     title:
       "Groupomania, réseau social d'entreprise réalisé avec ReactJs et NodeJs",
     titleEn:
@@ -107,7 +76,7 @@ export const openclassrooms1 = [
 export const openclassrooms2 = [
   {
     id: 1,
-    image: GameOn,
+    image: "/assets/portfolio/gameon.webp",
     title: "GameOn, Gestion de formulaire avec Regex en Javascript",
     titleEn: "GameOn, Handling forms with Regex in Javascript",
     github: "https://github.com/AurelienAllenic/GameOn-website-FR",
@@ -118,7 +87,7 @@ export const openclassrooms2 = [
   },
   {
     id: 2,
-    image: Fisheye,
+    image: "/assets/portfolio/fisheye.webp",
     title:
       "Fisheye, site accessible pour une plateforme de photographes en javascript",
     titleEn: "Fisheye, Creating a photographe site accessible in javascript",
@@ -130,7 +99,7 @@ export const openclassrooms2 = [
   },
   {
     id: 3,
-    image: Plats,
+    image: "/assets/portfolio/plats.webp",
     title:
       "Les petits plats, projet de développement d'algorithmes de recherche en javascript",
     titleEn: "Les petits plats, algorithmic search project in javascript",
@@ -142,7 +111,7 @@ export const openclassrooms2 = [
   },
   {
     id: 4,
-    image: Kasa,
+    image: "/assets/portfolio/kasa.jpeg",
     title: "Kasa, projet de site de location d'appartement en reactJs",
     titleEn:
       "Kasa, project of creating an apartment rental online website in reactJs",
@@ -154,7 +123,7 @@ export const openclassrooms2 = [
   },
   {
     id: 5,
-    image: LearnHome,
+    image: "/assets/portfolio/learnhome.jpeg",
     title:
       "LearnHome, projet de maquettage via figma, de création de users stories et de diagrammes de cas d'usages",
     titleEn:
@@ -168,7 +137,7 @@ export const openclassrooms2 = [
   },
   {
     id: 6,
-    image: Wealthealth,
+    image: "/assets/portfolio/wealthealth.jpeg",
     title:
       "WealthHealth, refonte en reactJs à partir d'un code jQuery d'un site d'ajout d'employés utilisant react redux",
     titleEn:
@@ -181,7 +150,7 @@ export const openclassrooms2 = [
   },
   {
     id: 7,
-    image: Sportsee,
+    image: "/assets/portfolio/sportsee.jpeg",
     title:
       "Sportsee, site FullStack ReactJs + nodeJs permettant de suivre des statistiques sportives quotidiennes via des graphiques recharts",
     titleEn:
@@ -194,7 +163,7 @@ export const openclassrooms2 = [
   },
   {
     id: 8,
-    image: ArgentBank,
+    image: "/assets/portfolio/argentBank.jpeg",
     title:
       "ArgentBank, site FullStack ReactJs + nodeJs qui permet à l'utilisateur de se conncter à son compte bancaire et d'éditer son nom d'utilisateur",
     titleEn:
@@ -209,7 +178,7 @@ export const openclassrooms2 = [
 export const openclassrooms3 = [
   {
     id: 1,
-    image: BooksToScrape,
+    image: "/assets/portfolio/booksToScrape.jpeg",
     title:
       "BooksToScrape, Scrapper pour suivre les prix des livres chez un revendeur en Python.",
     titleEn:
@@ -222,7 +191,7 @@ export const openclassrooms3 = [
   },
   {
     id: 2,
-    image: HomeSkolar,
+    image: "/assets/portfolio/homeSkolar.jpeg",
     title:
       "HomeSkolar, Création d'un cahier des charges et d'un backlog product pour une association de soutien scolaire",
     titleEn:
@@ -235,20 +204,20 @@ export const openclassrooms3 = [
         id: 1,
         title: "Spécifications",
         titleEn: "plan",
-        link: CahierDesCharges,
+        link: "/assets/HomeSkolar/cahier_des_charges.pdf",
       },
       {
         id: 2,
         title: "backlog",
         titleEn: "backlog",
-        link: BacklogProduit,
+        link: "/assets/HomeSkolar/backlog_product.pdf",
       },
     ],
     technologies: ["backlog"],
   },
   {
     id: 3,
-    image: ChessTournament,
+    image: "/assets/portfolio/chessTournament.jpeg",
     title:
       "ChessTournament, algorithme de gestion de tournois d'échecs en Python",
     titleEn: "ChessTournament, algorithmic chess tournament project in python",
@@ -260,7 +229,7 @@ export const openclassrooms3 = [
   },
   {
     id: 4,
-    image: JustStreamIt,
+    image: "/assets/portfolio/justStreamIt.jpeg",
     title: "JustStreamIt, Site de streaming réalisé avec django et javascript",
     titleEn: "JustStreamIt, Online streaming site with django and javascript",
     github: "https://github.com/AurelienAllenic/justStreamIt-p6-OP",
@@ -271,7 +240,7 @@ export const openclassrooms3 = [
   },
   {
     id: 5,
-    image: AlgoInvestAndTrade,
+    image: "/assets/portfolio/algoInvest&Trade.jpeg",
     title:
       "AlgoInvest&Trade, Optimisation d'investissmeent à l'aide d'algorithmes Python",
     titleEn:
@@ -284,7 +253,7 @@ export const openclassrooms3 = [
   },
   {
     id: 6,
-    image: LitRevu,
+    image: "/assets/portfolio/litRevu.jpeg",
     title:
       "LitRevu, Projet django qui permet aux utilisateurs de poster des critiques ou des demandes de critiques ainsi que suivre des uilisateurs.",
     titleEn:
@@ -297,7 +266,7 @@ export const openclassrooms3 = [
   },
   {
     id: 7,
-    image: SoftDesk,
+    image: "/assets/portfolio/softDesk.jpeg",
     title:
       "SoftDesk, Développement d'une API RESTful avec Django Rest Framework pour remonter et suivre des problèmes techniques en B2B.",
     titleEn:
@@ -310,7 +279,7 @@ export const openclassrooms3 = [
   },
   {
     id: 8,
-    image: GudLft,
+    image: "/assets/portfolio/gudLft.jpeg",
     title:
       "GudLft, projet de testing d'une api flask pour des réservations de places en compétitions sportives.",
     titleEn:
@@ -323,7 +292,7 @@ export const openclassrooms3 = [
   },
   {
     id: 9,
-    image: EpicEvents,
+    image: "/assets/portfolio/epic_events.webp",
     title:
       "Epic Events, développement d'un backend sécurisé avec Python et SQL dans le domaine de l'évenementiel",
     titleEn:
@@ -336,7 +305,7 @@ export const openclassrooms3 = [
   },
   {
     id: 10,
-    image: Orange,
+    image: "/assets/portfolio/orange.webp",
     title:
       "Orange County Lettings, correction de bugs, testing, logging avec Sentry, documentation avec Read The Docs et Spynx. Création d'un pipeline CI/CD avec GitHub Actions, Render et Docker",
     titleEn:
@@ -351,7 +320,7 @@ export const openclassrooms3 = [
 export const projects = [
   {
     id: 1,
-    image: Paro,
+    image: "/assets/portfolio/paro.webp",
     title:
       "paroxx.com : projet de site vitrine pour l'artiste ParoXX réalisé avec ReactJs / Vite et nodeJs",
     titleEn:
@@ -364,7 +333,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: Claquettes,
+    image: "/assets/portfolio/claquettes.webp",
     title:
       "claquettes-swing.fr : participation à la création du front en ReactJs et au déploiement",
     titleEn:
@@ -377,7 +346,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: Linconnu,
+    image: "/assets/portfolio/linconnu.webp",
     title:
       "linconnu-magic.com : Création d'un site web de magie à destination du public en ReactJs",
     titleEn:

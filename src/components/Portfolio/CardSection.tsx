@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from "./portfolio.module.scss";
 import { useLanguage } from '../Context/LanguageContext';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io";
-import { StaticImageData } from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +20,7 @@ interface FolderData {
 
 interface ProjectData {
   id: string;
-  image: StaticImageData;
+  image: string; // Changed to string for image path
   title: string;
   titleEn: string;
   github: string;
@@ -79,7 +79,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
           scrollTrigger: {
             trigger: card,
             start: "top 70%",
-            end: "bottom 0%",
+            end: "bottom -office0%",
             toggleActions: "play reverse play none",
           }
         });
@@ -87,9 +87,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
     });
 
     return () => {
-      if (ScrollTrigger) {
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      }
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, [datas]);
 
@@ -106,7 +104,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
 
     setSelectedCardIndex(index);
     document.body.classList.add('openModal');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden';
 
     gsap.set(card, {
       position: 'fixed',
@@ -154,7 +152,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
 
       setSelectedCardIndex(null);
       document.body.classList.remove('openModal');
-      document.body.style.overflow = ''; // Restore scrolling
+      document.body.style.overflow = '';
     }
   };
 
@@ -244,7 +242,6 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
   return (
     <>
       {datas.map(({ id, image, title, titleEn, github, demo, figma, folder }: ProjectData, index: number) => {
-        // Determine if the current card should have the 'take_space' class
         const shouldAddClass = index === 3 && datas.length < 5;
         const shouldAddClass2 = index === 9 && datas.length < 11;
         const shouldAddClass3 = index === 4 && datas.length < 6;
@@ -267,12 +264,26 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
               {selectedCardIndex === index && (
                 <>
                   {datas.length > 1 && <button className={styles.arrow_prev} onClick={(e) => { e.stopPropagation(); handlePrevCard(); }}><IoIosArrowBack /></button>}
-                  <img src={image.src} className={styles.img_single_project} alt={language === 'FR' ? title : titleEn} />
+                  <Image
+                    src={image}
+                    className={styles.img_single_project}
+                    alt={language === 'FR' ? title : titleEn}
+                    width={400} // Adjust based on your image dimensions
+                    height={300} // Adjust based on your image dimensions
+                    priority={index === 0} // Optional: prioritize first image for LCP
+                  />
                   {datas.length > 1 && <button className={styles.arrow_next} onClick={(e) => { e.stopPropagation(); handleNextCard(); }}><IoIosArrowForward /></button>}
                 </>
               )}
               {selectedCardIndex !== index && (
-                <img src={image.src} className={styles.img_single_project} alt={language === 'FR' ? title : titleEn} />
+                <Image
+                  src={image}
+                  className={styles.img_single_project}
+                  alt={language === 'FR' ? title : titleEn}
+                  width={400}
+                  height={300}
+                  priority={index === 0}
+                />
               )}
             </div>
             

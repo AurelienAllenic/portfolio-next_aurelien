@@ -3,7 +3,6 @@
 import { openclassrooms2 } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
-import { IoIosArrowUp } from "react-icons/io";
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
 import { useLanguage } from "../Context/LanguageContext";
@@ -23,8 +22,6 @@ const ReactFormation = () => {
   const {language} = useLanguage;
   const [isopen, setIsOpen] = useState<boolean>(false);
 
-  const IMG: StaticImageData = openclassrooms2[0].image;
-
   return (
     <>
       <a className={styles.anchor} id='formation_react'></a>
@@ -32,7 +29,7 @@ const ReactFormation = () => {
         <div className={styles.container_title_img} style={{ position: 'relative' }}>
           <div 
             style={{ 
-              backgroundImage: `url(${IMG.src})`, 
+              backgroundImage: "url('/assets/portfolio/fisheye.webp')",
               filter: 'blur(3px)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',

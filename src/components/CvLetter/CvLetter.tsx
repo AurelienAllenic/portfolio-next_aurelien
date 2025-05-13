@@ -7,12 +7,12 @@ import { useLanguage } from "../Context/LanguageContext";
 // imports séparés dans des objets dynamiques
 const CVAssets = {
   FR: {
-    image: require("../../assets/cv.png"),
-    pdf: require("../../assets/CV.pdf"),
+    image: "/assets/CV.png",
+    pdf: "/assets/CV.pdf",
   },
   EN: {
-    image: require("../../assets/CV_EN.png"),
-    pdf: require("../../assets/CV_EN.pdf"),
+    image: "/assets/CV_EN.png",
+    pdf: "/assets/CV_EN.pdf",
   },
 };
 
@@ -29,9 +29,9 @@ const CvLetter: React.FC = () => {
     <section className={styles.cvLetter} id="cvLetter">
       <h1 className={styles.main_title_languages}>Curriculum</h1>
       <div className={styles.cvLetter_container}>
-        <div className={styles.container_cv} onClick={() => downloadDocument(pdf.default)}>
+        <div className={styles.container_cv} onClick={() => downloadDocument(pdf)}>
           <Image
-            src={image.default}
+            src={image}
             alt={language === "FR" ? "CV en français" : "CV in English"}
             width={500}
             height={700}

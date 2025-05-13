@@ -23,8 +23,6 @@ const DevFormation = () => {
   const { language } = useLanguage();
   const [isopen, setIsOpen] = useState<boolean>(false);
 
-  const IMG: StaticImageData = openclassrooms1[0].image;
-
   return (
     <>
       <a className={styles.anchor} id='formation-web'></a>
@@ -32,7 +30,7 @@ const DevFormation = () => {
         <div className={styles.container_title_img} style={{ position: 'relative' }}>
           <div 
             style={{ 
-              backgroundImage: `url(${IMG.src})`, 
+              backgroundImage: "url('/assets/portfolio/booki.webp')",
               filter: 'blur(3px)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
