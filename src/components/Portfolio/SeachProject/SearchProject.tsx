@@ -6,7 +6,7 @@ import { openclassrooms1, openclassrooms2, openclassrooms3, projects } from "../
 import CardSection from '../CardSection';
 import styles from './searchProject.module.scss';
 import { useLanguage } from '@/components/Context/LanguageContext';
-import { ProjectData } from './types';
+import { ProjectData } from '../types';
 
 
 const SearchProject: React.FC = () => {
