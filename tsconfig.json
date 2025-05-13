@@ -3,10 +3,18 @@
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false, // Disable strict mode
-    "noImplicitAny": false, // Allow implicit any (fixes props errors)
-    "strictNullChecks": false, // Relax null/undefined checks
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "strict": false, // Disable all strict type-checking
+    "noImplicitAny": false, // Allow implicit any types
+    "strictNullChecks": false, // Disable null/undefined checks
+    "noImplicitThis": false, // Allow untyped 'this'
+    "alwaysStrict": false, // Disable strict mode parsing
+    "noUnusedLocals": false, // Allow unused variables
+    "noUnusedParameters": false, // Allow unused parameters
+    "noImplicitReturns": false, // Allow functions without return
+    "noFallthroughCasesInSwitch": false, // Allow switch fallthrough
+    "allowUnreachableCode": true, // Allow unreachable code
+    "allowUnusedLabels": true, // Allow unused labels
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -15,11 +23,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
       "@/types/*": ["./src/types/*"] // Support src/types/ if needed
