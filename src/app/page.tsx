@@ -11,20 +11,23 @@ import DevFormation from "@/components/Portfolio/DevFormation";
 import PersoProjects from "@/components/Portfolio/PersoProjects";
 import Contact from "@/components/Contact/Contact";
 import { LanguageProvider } from "@/components/Context/LanguageContext";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <LanguageProvider>
-        <About  />
-        <CvLetter />
-        <Programmation />
-        <PythonFormation />
-        <ReactFormation />
-        <DevFormation />
-        <PersoProjects />
-        <Contact />
-      </LanguageProvider>
+      <Suspense fallback={<div>Chargement...</div>}>
+        <LanguageProvider>
+          <About  />
+          <CvLetter />
+          <Programmation />
+          <PythonFormation />
+          <ReactFormation />
+          <DevFormation />
+          <PersoProjects />
+          <Contact />
+        </LanguageProvider>
+      </Suspense>
     </div>
   );
 }
