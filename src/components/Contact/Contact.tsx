@@ -27,26 +27,27 @@ const Contact = () => {
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     if (!form.current) return;
-
+  
     const formData: FormData = {
       name: form.current.name.value,
       email: form.current.email.value,
       message: form.current.message.value,
     };
-
+  
     try {
-      const response = await fetch(`${import.meta.env.VITE_VERCEL_LINK}`, {
+      // Remplacez l'URL ici pour pointer vers votre API locale
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
+  
       const result = await response.json();
-
+  
       if (result.success) {
         setIsError(false);
         setShowConfirmation(true);
@@ -62,9 +63,10 @@ const Contact = () => {
       console.error("Error sending email:", error);
       setIsError(true);
     }
-
+  
     form.current.reset();
   };
+  
 
   return (
     <>
