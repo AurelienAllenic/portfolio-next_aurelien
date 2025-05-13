@@ -9,7 +9,7 @@ import { useLanguage } from "../Context/LanguageContext";
 
 // Define types for the data structure
 interface ProjectData {
-  image: StaticImageData;
+  image: string;
   // Add other properties of openclassrooms2 items as needed
 }
 

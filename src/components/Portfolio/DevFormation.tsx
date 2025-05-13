@@ -9,7 +9,7 @@ import { StaticImageData } from 'next/image';
 
 // Define types for the data structure
 interface ProjectData {
-  image: StaticImageData;
+  image: string;
   // Add other properties of openclassrooms1 items as needed
 }
 

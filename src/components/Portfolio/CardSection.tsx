@@ -64,7 +64,6 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
   };
 
   useEffect(() => {
-    ScrollTrigger.defaults({ passive: true });
     cardsRef.current = cardsRef.current.slice(0, datas.length);
 
     cardsRef.current.forEach((card) => {
@@ -249,7 +248,9 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
         return (
           <article
             key={`${id}-${index}`}
-            ref={el => cardsRef.current[index] = el}
+            ref={(el: HTMLElement | null) => {
+              cardsRef.current[index] = el;
+            }}
             className={`${styles.card_single_project} ${selectedCardIndex !== null && selectedCardIndex !== index ? styles.disabled : styles.enabled} ${shouldAddClass || shouldAddClass2 || shouldAddClass3 ? styles.take_space : ''}`}
             onClick={() => handleCardClick(index)}
             onMouseEnter={() => handleCardHover(cardsRef.current[index])}
@@ -289,7 +290,13 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
             
             <p className={styles.content_single_project}>{language === 'FR' ? title : titleEn}</p>
             <div className={styles.container_links_portfolio}>
-              {figma === '' && folder.length === 0 ? (
+              {Array.isArray(folder) ? (
+                folder.map((file: FolderData, idx: number) => (
+                  <a key={`${file.id}-${idx}`} href={file.link} target="_blank" className={styles.link_single_project}>
+                    {language === 'FR' ? file.title : file.titleEn}
+                  </a>
+                ))
+              ) : (
                 <>
                   {github !== '' && demo !== '' ? (
                     <a href={github} target="_blank" className={styles.link_single_project}>Github</a>
@@ -298,11 +305,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
                   ) : null}
                   {demo !== '' && <a href={demo} target="_blank" className={styles.link_single_project}>{language === 'FR' ? 'Démo en direct' : 'Live Demo'}</a>}
                 </>
-              ) : figma !== '' ? (
-                <a href={figma} target="_blank" download className={styles.link_single_project_figma}>Figma</a>
-              ) : folder.length > 0 && folder.map((file: FolderData, idx: number) => (
-                <a key={`${file.id}-${idx}`} href={file.link} target="_blank" className={styles.link_single_project}>{language === 'FR' ? file.title : file.titleEn}</a>
-              ))}
+              )}
             </div>
           </article>
         );
