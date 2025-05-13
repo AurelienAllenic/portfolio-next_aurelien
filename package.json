@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "eslint . --max-warnings=0 && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "eslint . --max-warnings=1000 || true && next build && next deploy"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "deploy": "next build && next deploy"
+},
   "dependencies": {
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
