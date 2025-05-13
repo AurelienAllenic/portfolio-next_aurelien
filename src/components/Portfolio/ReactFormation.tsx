@@ -4,14 +4,8 @@ import { openclassrooms2 } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
 import { useState } from 'react';
-import { StaticImageData } from 'next/image';
 import { useLanguage } from "../Context/LanguageContext";
-
-// Define types for the data structure
-interface ProjectData {
-  image: string;
-  // Add other properties of openclassrooms2 items as needed
-}
+import { ProjectData } from './types';
 
 // Define type for the context
 interface LanguageContextType {

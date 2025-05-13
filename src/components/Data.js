@@ -7,7 +7,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/Booki",
     demo: "https://aurelienallenic.github.io/Booki/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["html", "css"],
   },
   {
@@ -18,7 +18,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/AurelienAllenic.github.io",
     demo: "https://aurelienallenic.github.io/ohmyfood.github.io/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["html", "css", "scss"],
   },
   {
@@ -31,7 +31,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/lapanthere.github.io",
     demo: "https://aurelienallenic.github.io/lapanthere.github.io/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["seo"],
   },
   {
@@ -42,7 +42,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/kanap-p5-openclassrooms",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["html", "css", "javascript"],
   },
   {
@@ -55,7 +55,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/hot-takes",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["javascript", "nodejs"],
   },
   {
@@ -68,7 +68,7 @@ export const openclassrooms1 = [
     github: "https://github.com/AurelienAllenic/groupomania/tree/develop",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "nodejs"],
   },
 ];
@@ -82,7 +82,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/GameOn-website-FR",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["javascript", "html", "css"],
   },
   {
@@ -94,7 +94,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/Front-End-Fisheye",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["javascript", "html", "css"],
   },
   {
@@ -106,7 +106,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/les_petits_plats",
     demo: "https://aurelienallenic.github.io/les_petits_plats/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["javascript", "html", "css"],
   },
   {
@@ -118,7 +118,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/kasa_p11",
     demo: "https://aurelienallenic.github.io/kasa_p11/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs"],
   },
   {
@@ -132,7 +132,7 @@ export const openclassrooms2 = [
     demo: "",
     figma:
       "https://www.figma.com/file/AS6HKjnwIh1bpK0SZE90GJ/learnHome?type=design&node-id=0-1&mode=design",
-    folder: "",
+    folder: [],
     technologies: ["userstories", "figma"],
   },
   {
@@ -145,7 +145,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/wealthhealth-op-p14",
     demo: "https://aurelienallenic.github.io/wealthhealth-op-p14/",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["jquery"],
   },
   {
@@ -158,7 +158,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/sportsee",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "nodejs"],
   },
   {
@@ -171,7 +171,7 @@ export const openclassrooms2 = [
     github: "https://github.com/AurelienAllenic/argent-bank",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "nodejs"],
   },
 ];
@@ -186,7 +186,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/BooksOnline---python---p1",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["python"],
   },
   {
@@ -224,7 +224,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/chessTournament-p4-python",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["python"],
   },
   {
@@ -235,7 +235,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/justStreamIt-p6-OP",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["django", "javascript", "html", "twig"],
   },
   {
@@ -248,7 +248,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/AlgoInvest-Trade-OP-P7",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["python"],
   },
   {
@@ -261,7 +261,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/LITRevu---P9",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["django", "html", "css", "twig"],
   },
   {
@@ -274,7 +274,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/softDesk_OP-P10",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["django rest", "django"],
   },
   {
@@ -287,7 +287,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/GudLft-OP-P11",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["django", "flask", "pytest"],
   },
   {
@@ -300,7 +300,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/epic_events---P12",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["python", "sql", "sentry"],
   },
   {
@@ -313,7 +313,7 @@ export const openclassrooms3 = [
     github: "https://github.com/AurelienAllenic/Python-OC-Lettings-FR",
     demo: "",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["sentry", "pipeline ci/cd", "docker"],
   },
 ];
@@ -328,7 +328,7 @@ export const projects = [
     github: "",
     demo: "https://paroxx.com",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "scss", "nodejs"],
   },
   {
@@ -341,7 +341,7 @@ export const projects = [
     github: "",
     demo: "https://claquettes-swing.fr",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "scss", "twig"],
   },
   {
@@ -354,7 +354,7 @@ export const projects = [
     github: "",
     demo: "https://linconnu-magic.com",
     figma: "",
-    folder: "",
+    folder: [],
     technologies: ["reactjs", "styled-components"],
   },
 ];

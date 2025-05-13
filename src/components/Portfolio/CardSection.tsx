@@ -7,27 +7,9 @@ import { useLanguage } from '../Context/LanguageContext';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io";
+import { ProjectData, FolderData } from './types';
 
 gsap.registerPlugin(ScrollTrigger);
-
-// Define types for the data structure
-interface FolderData {
-  id: string;
-  link: string;
-  title: string;
-  titleEn: string;
-}
-
-interface ProjectData {
-  id: string;
-  image: string; // Changed to string for image path
-  title: string;
-  titleEn: string;
-  github: string;
-  demo: string;
-  figma: string;
-  folder: FolderData[];
-}
 
 interface CardSectionProps {
   datas: ProjectData[];

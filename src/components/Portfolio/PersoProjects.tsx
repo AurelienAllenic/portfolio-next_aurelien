@@ -6,13 +6,7 @@ import CardSection from './CardSection';
 import { projects } from "../Data";
 import styles from "./portfolio.module.scss";
 import { useLanguage } from '../Context/LanguageContext';
-import { StaticImageData } from 'next/image';
-
-// Define types for the data structure
-interface ProjectData {
-  image: string;
-  // Add other properties of projects items as needed
-}
+import { ProjectData } from './types';
 
 // Define type for the context
 interface LanguageContextType {

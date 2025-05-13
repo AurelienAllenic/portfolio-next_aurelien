@@ -6,30 +6,19 @@ import { openclassrooms1, openclassrooms2, openclassrooms3, projects } from "../
 import CardSection from '../CardSection';
 import styles from './searchProject.module.scss';
 import { useLanguage } from '@/components/Context/LanguageContext';
+import { ProjectData } from './types';
 
-// Interface pour les données des projets (alignée avec CardSection)
-interface CardData {
-  id: number;
-  image: StaticImageData;
-  title: string;
-  titleEn: string;
-  github: string;
-  demo: string;
-  figma: string;
-  folder: string;
-  technologies: string[];
-}
 
 const SearchProject: React.FC = () => {
   const { language } = useLanguage();
   // Combinaison de tous les projets en une seule liste de base
-  const baseAllProjects: CardData[] = [...openclassrooms1, ...openclassrooms2, ...openclassrooms3, ...projects] as CardData[];
-  const [searchData, setSearchData] = useState<CardData[]>(baseAllProjects);
+  const baseAllProjects: ProjectData[] = [...openclassrooms1, ...openclassrooms2, ...openclassrooms3, ...projects] as ProjectData[];
+  const [searchData, setSearchData] = useState<ProjectData[]>(baseAllProjects);
   const [searchValue, setSearchValue] = useState<string>('');
   const [filterSelected, setFilterSelected] = useState<string[]>([]);
 
   // Fonction pour filtrer les projets en fonction de la valeur et du tableau donné
-  const sortProject = (value: string, array: CardData[]): CardData[] => {
+  const sortProject = (value: string, array: ProjectData[]): ProjectData[] => {
     return array
       .filter(project => {
         if (language === 'FR') {
@@ -47,7 +36,7 @@ const SearchProject: React.FC = () => {
   };
 
   // Appliquer les filtres sélectionnés aux projets
-  const applyFilters = (array: CardData[]): CardData[] => {
+  const applyFilters = (array: ProjectData[]): ProjectData[] => {
     if (filterSelected.length === 0) return array;
     return array.filter(project => {
       return filterSelected.some(filter => {
@@ -58,7 +47,7 @@ const SearchProject: React.FC = () => {
   };
 
   // Fonction principale pour vérifier et filtrer les projets
-  const checkForProject = (value: string, array: CardData[]) => {
+  const checkForProject = (value: string, array: ProjectData[]) => {
     // Filtrer les projets en fonction de la recherche textuelle
     const dataAfterSearchInput = sortProject(value, array);
     // Appliquer les filtres aux projets filtrés

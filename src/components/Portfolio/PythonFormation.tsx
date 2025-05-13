@@ -1,36 +1,20 @@
 "use client";
 
-import React, { use, useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import { openclassrooms3 } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
 import SearchProject from './SeachProject/SearchProject';
 import { useLanguage } from '../Context/LanguageContext';
+import { ProjectData } from './types';
 
-// Interface pour les données des cartes (alignée avec CardSection)
-interface CardData {
-  id: number;
-  image: StaticImageData;
-  title: string;
-  titleEn: string;
-  github: string;
-  demo: string;
-  figma: string;
-  folder: string;
-  technologies: string[];
-}
-
-// Interface pour les props du composant
 interface PythonFormationProps {}
-
-// Typage des données importées
-const typedOpenclassrooms3: CardData[] = openclassrooms3 as CardData[];
 
 const PythonFormation: React.FC<PythonFormationProps> = () => {
   const [isopen, setIsOpen] = useState<boolean>(false);
   const {language} = useLanguage()
-  const IMG = typedOpenclassrooms3[0].image;
+  const IMG = openclassrooms3[0].image;
 
   return (
     <>
@@ -82,7 +66,7 @@ const PythonFormation: React.FC<PythonFormationProps> = () => {
         </div>
         {isopen && (
           <article className={styles.container_projects}>
-            <CardSection datas={typedOpenclassrooms3} />
+            <CardSection datas={openclassrooms3 as ProjectData[]} />
           </article>
         )}
       </section>

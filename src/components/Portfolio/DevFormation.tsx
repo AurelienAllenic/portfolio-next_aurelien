@@ -5,13 +5,7 @@ import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
 import { useLanguage } from '../Context/LanguageContext';
 import { useState } from 'react';
-import { StaticImageData } from 'next/image';
-
-// Define types for the data structure
-interface ProjectData {
-  image: string;
-  // Add other properties of openclassrooms1 items as needed
-}
+import { ProjectData } from './types';
 
 // Define type for the context
 interface LanguageContextType {
@@ -19,7 +13,7 @@ interface LanguageContextType {
 }
 
 const DevFormation = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() as LanguageContextType;
   const [isopen, setIsOpen] = useState<boolean>(false);
 
   return (
