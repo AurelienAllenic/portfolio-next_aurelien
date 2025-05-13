@@ -31,7 +31,7 @@ const SearchProject: React.FC = () => {
       })
       .map((project, index) => ({
         ...project,
-        id: `${project.title}-${index}-${Date.now()}` // id devient string ici
+        id: project.id // id devient string ici
       }));
   };
 

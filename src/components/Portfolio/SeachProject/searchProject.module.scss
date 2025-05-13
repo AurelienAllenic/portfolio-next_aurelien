@@ -24,6 +24,7 @@
                 text-overflow: ellipsis; // Utilise des points de suspension pour le texte qui dépasse
                 white-space: nowrap; // Empêche le texte de se répartir sur plusieurs lignes
                 background-color: white;
+                color: black;
                 &::placeholder {
                     color: #666; // Couleur du texte du placeholder pour plus de lisibilité
                     font-size: 1.3rem; // Taille de la police du placeholder
