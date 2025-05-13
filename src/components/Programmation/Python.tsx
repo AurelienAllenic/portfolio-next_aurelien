@@ -6,6 +6,7 @@ Source: https://sketchfab.com/3d-models/python-8be4a2579dd84586b915068e475073ee
 Title: Python
 */
 /* eslint-disable */
+// @ts-nocheck
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 

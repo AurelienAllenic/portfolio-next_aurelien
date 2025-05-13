@@ -15,7 +15,6 @@
     "noFallthroughCasesInSwitch": false,
     "allowUnreachableCode": true,
     "allowUnusedLabels": true,
-    "suppressImplicitAnyIndexErrors": true, // Suppress index access errors
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
