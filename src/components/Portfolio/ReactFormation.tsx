@@ -19,7 +19,7 @@ interface LanguageContextType {
 }
 
 const ReactFormation = () => {
-  const {language} = useLanguage;
+  const {language} = useLanguage() as LanguageContextType;
   const [isopen, setIsOpen] = useState<boolean>(false);
 
   return (

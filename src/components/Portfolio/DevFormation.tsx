@@ -4,7 +4,6 @@ import { openclassrooms1 } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
 import { useLanguage } from '../Context/LanguageContext';
-import { IoIosArrowUp } from "react-icons/io";
 import { useState } from 'react';
 import { StaticImageData } from 'next/image';
 
