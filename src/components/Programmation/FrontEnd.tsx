@@ -52,7 +52,7 @@ const FrontEnd: React.FC<FrontEndProps> = ({ setCodingLanguage }) => {
           <ul className={styles.list_card}>
             <li>HTML</li>
             <li>CSS/SCSS</li>
-            <li>Js / React</li>
+            <li>Js/React</li>
             <li>NextJs</li>
           </ul>
         </div>
