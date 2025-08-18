@@ -29,7 +29,12 @@ const CvLetter: React.FC = () => {
     <section className={styles.cvLetter} id="cvLetter">
       <h1 className={styles.main_title_languages}>Curriculum</h1>
       <div className={styles.cvLetter_container}>
-        <div className={styles.container_cv} onClick={() => downloadDocument(pdf)}>
+        <div
+          className={`${styles.container_cv} ${
+            language === "FR" ? styles.container_cv_fr : styles.container_cv_en
+          }`}
+          onClick={() => downloadDocument(pdf)}
+        >
           <Image
             src={image}
             alt={language === "FR" ? "CV en français" : "CV in English"}
