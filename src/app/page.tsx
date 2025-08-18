@@ -6,19 +6,21 @@ import CvLetter from "@/components/CvLetter/CvLetter";
 import Programmation from "@/components/Programmation/Programmation";
 import PythonFormation from "@/components/Portfolio/PythonFormation";
 import ReactFormation from "@/components/Portfolio/ReactFormation";
-import './page.scss'
+import "./page.scss";
 import DevFormation from "@/components/Portfolio/DevFormation";
 import PersoProjects from "@/components/Portfolio/PersoProjects";
 import Contact from "@/components/Contact/Contact";
 import { LanguageProvider } from "@/components/Context/LanguageContext";
 import { Suspense } from "react";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 export default function Home() {
+  useScrollToHash();
   return (
     <div className={styles.page}>
       <Suspense fallback={<div>Chargement...</div>}>
         <LanguageProvider>
-          <About  />
+          <About />
           <CvLetter />
           <Programmation />
           <PythonFormation />
