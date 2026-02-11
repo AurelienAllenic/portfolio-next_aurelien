@@ -62,6 +62,24 @@
         cursor: pointer;
     }
 }
+.consent_label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    color: black;
+    font-size: 0.95rem;
+    max-width: 80%;
+    user-select: none;
+}
+.consent_checkbox {
+    margin-top: 0.25rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: #101010;
+    cursor: pointer;
+    flex-shrink: 0;
+}
 .textarea{
     border: none;
     background-color: transparent;

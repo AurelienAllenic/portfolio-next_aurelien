@@ -118,6 +118,19 @@ const Contact = () => {
             required
             className={styles.textarea}
           />
+          <label className={styles.consent_label}>
+            <input
+              type="checkbox"
+              name="consent"
+              required
+              className={styles.consent_checkbox}
+            />
+            <span>
+              {language === "FR"
+                ? "Je consens à être recontacté par l'email fourni dans ce formulaire"
+                : "I consent to be contacted by the email provided in this form"}
+            </span>
+          </label>
           <button type="submit" className={styles.btn_submit}>
             {language === "FR" ? "Envoyer" : "Send"}
             <FaArrowRight />
