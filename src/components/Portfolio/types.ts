@@ -14,7 +14,10 @@ export interface FolderData {
     github: string;
     demo: string;
     figma: string;
-    folder: FolderData[];
+    folder: FolderData[] | never[];
     technologies: string[];
+    description?: string;
+    descriptionEn?: string;
+    imageDiaporama?: string[];
   }
   

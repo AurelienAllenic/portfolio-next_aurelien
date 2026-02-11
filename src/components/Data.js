@@ -1,360 +1,119 @@
+/* eslint-disable */
+
+const HTML = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/html_yzkdbv.webp';
+const CSS = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/css_ldbn4p.webp';
+const SCSS = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/scss_f6hkzy.webp';
+const Js = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/js_cbaqmr.webp';
+const ReactJs = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/react_jzelsd.webp';
+const nodeJs = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/nodejs_lqsesq.webp';
+const Python = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/python_ldgrbv.webp';
+const Django = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/django_dyc8kz.webp';
+const NextJs = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/next_ep27nk.webp';
+const Wordpress = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/wordpress-icon_ngq76k.webp';
+const Php = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/php_r7rttg.webp';
+const JQuery = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/jquery_wk7xot.webp';
+
+const Booki = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/booki_c6gjvd.webp';
+const Ohmyfood = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/ohmyfood_phb4aq.webp';
+const Lapanthere = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/lapanthere_juj7g7.webp';
+const Kanap = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/kanap_mkhlzf.webp';
+const Piiquante = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/piiquante_gvvrps.webp';
+const Groupomania = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/groupomania_fw18it.webp';
+
+const GameOn = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/gameon_uieupe.webp';
+const Fisheye = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/fisheye_v5tn68.webp';
+const Plats = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/plats_dxjtjt.webp';
+const Kasa = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/kasa_az4tcj.webp';
+const LearnHome = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/learnHome_vyyr9m.webp';
+const Wealthealth = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/Wealthealth_lwvimy.webp';
+const Sportsee = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/sportsee_p1fghs.webp';
+const ArgentBank = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/bank_fmoxdj.webp';
+
+const BooksToScrape = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/book_mirrli.webp';
+const HomeSkolar = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/homeskolar_uj8jqd.webp';
+const ChessTournament = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/chess_nfe7lz.webp';
+const JustStreamIt = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/stream_izvujy.webp';
+const AlgoInvestAndTrade = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/trading_ct8fux.webp';
+const LitRevu = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/litRevu_pk8fqm.webp';
+const SoftDesk = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/softDesk_wlezii.webp';
+const GudLft = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/coursejpg_mmfjex.webp';
+const EpicEvents = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/event_bzfdnf.webp';
+const Orange = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/orangeCounty_ydfull.webp';
+
+const CahierDesCharges = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/cahier_des_charges_sujr7m.pdf';
+const BacklogProduit = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/backlog_product_zupecr.pdf';
+
+const Paro = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/paro_furqx6.webp';
+const Claquettes = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/claquettes_tcwcpf.webp';
+const Ascent = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/ascent_pyerwc.webp';
+const Linconnu = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/linconnu_blnezz.webp';
+const PreviousAurelien = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/aurelienallenic_xxjzsw.webp';
+
+const District = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/district_ztpd3h.webp';
+const Alteys = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/alteys_v61q7f.webp';
+const OpticDuroc = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/optic-duroc_jqxe1g.webp';
+const GillesEtBoissier = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/gillesetboissier_x2ryxn.webp';
+const Norelive = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/norelive_tipe9n.webp';
+const PatrickRubinstein = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/patrick-rubinstein_sirhrb.webp';
+const EcoAlternativ = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/eco-alternativ_cgopaz.webp';
+const PierreGasly = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/pierre-gasly_qombd8.webp';
+const Eliebenhamou = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/eliebenhamou_sc5vhr.webp';
+const LaCommune = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/lacommune_xnku7a.webp';
+const Anavie = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/anavie_sumvpa.webp';
+const RollerGrill = 'https://res.cloudinary.com/dwpbyyhoq/image/upload/f_webp,q_auto/rollergrill_wttjr8.webp';
+
 export const openclassrooms1 = [
-  {
-    id: 1,
-    image: "/assets/portfolio/booki.webp",
-    title: "Booki, projet de site de réservation hôtelier réalisé en HTML/CSS",
-    titleEn: "Booki, creation of a hostel booking project with HTML/CSS",
-    github: "https://github.com/AurelienAllenic/Booki",
-    demo: "https://aurelienallenic.github.io/Booki/",
-    figma: "",
-    folder: [],
-    technologies: ["html", "css"],
-  },
-  {
-    id: 2,
-    image: "/assets/portfolio/ohmyfood.jpg",
-    title: "Ohmyfood, site gastronomique réalisé en HTML, CSS et SCSS",
-    titleEn: "Ohmyfood, gastronomic website with HTML, CSS and SCSS",
-    github: "https://github.com/AurelienAllenic/AurelienAllenic.github.io",
-    demo: "https://aurelienallenic.github.io/ohmyfood.github.io/",
-    figma: "",
-    folder: [],
-    technologies: ["html", "css", "scss"],
-  },
-  {
-    id: 3,
-    image: "/assets/portfolio/lapanthere.jpg",
-    title:
-      "Lapanthere, site de web design basée à Lyon, projet d'amélioration SEO d'un site existant",
-    titleEn:
-      "Lapanthere, WebDesign project based in Lyon, improvement of SEO of an existing site",
-    github: "https://github.com/AurelienAllenic/lapanthere.github.io",
-    demo: "https://aurelienallenic.github.io/lapanthere.github.io/",
-    figma: "",
-    folder: [],
-    technologies: ["seo"],
-  },
-  {
-    id: 4,
-    image: "/assets/portfolio/kanap.webp",
-    title: "Kanap, site e-commerce réalisé en javaScript HTML, CSS",
-    titleEn: "Kanap, e-commerce website with javaScript HTML, CSS",
-    github: "https://github.com/AurelienAllenic/kanap-p5-openclassrooms",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["html", "css", "javascript"],
-  },
-  {
-    id: 5,
-    image: "/assets/portfolio/piiquante.webp",
-    title:
-      "Hot-takes, api de like et partage de sauces pimentées réalisé en nodeJs et en Javascript",
-    titleEn:
-      "Hot-takes, api of like and pimented sauces with nodeJs and Javascript",
-    github: "https://github.com/AurelienAllenic/hot-takes",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["javascript", "nodejs"],
-  },
-  {
-    id: 6,
-    image: "/assets/portfolio/groupomania.webp",
-    title:
-      "Groupomania, réseau social d'entreprise réalisé avec ReactJs et NodeJs",
-    titleEn:
-      "Groupomania, company's social network made with ReactJs and NodeJs",
-    github: "https://github.com/AurelienAllenic/groupomania/tree/develop",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "nodejs"],
-  },
+  { id: 1, image: Booki, imageDiaporama: [Booki], title: 'Booki', description: 'Projet de site de réservation hôtelier réalisé en HTML/CSS', titleEn: 'Booki', descriptionEn: 'Hotel booking website project created with HTML/CSS', github: 'https://github.com/AurelienAllenic/Booki', demo: 'https://aurelienallenic.github.io/Booki/', figma: '', folder: [], technologies: ['html', 'css'] },
+  { id: 2, image: Ohmyfood, imageDiaporama: [Ohmyfood], title: 'Ohmyfood', description: 'Site gastronomique réalisé en HTML, CSS et SCSS', titleEn: 'Ohmyfood', descriptionEn: 'Gastronomic website created with HTML, CSS and SCSS', github: 'https://github.com/AurelienAllenic/AurelienAllenic.github.io', demo: 'https://aurelienallenic.github.io/ohmyfood.github.io/', figma: '', folder: [], technologies: ['html', 'css', 'scss'] },
+  { id: 3, image: Lapanthere, imageDiaporama: [Lapanthere], title: 'Lapanthere', description: "Site de web design basé à Lyon, projet d'amélioration SEO d'un site existant", titleEn: 'Lapanthere', descriptionEn: 'Web design website based in Lyon, SEO improvement project for an existing site', github: 'https://github.com/AurelienAllenic/lapanthere.github.io', demo: 'https://aurelienallenic.github.io/lapanthere.github.io/', figma: '', folder: [], technologies: ['seo'] },
+  { id: 4, image: Kanap, imageDiaporama: [Kanap], title: 'Kanap', description: 'Site e-commerce réalisé en JavaScript, HTML et CSS', titleEn: 'Kanap', descriptionEn: 'E-commerce website created with JavaScript, HTML and CSS', github: 'https://github.com/AurelienAllenic/kanap-p5-openclassrooms', demo: 'https://kanap-p5-openclassrooms-ma54z1ntl-aurelien-allenics-projects.vercel.app/', figma: '', folder: [], technologies: ['html', 'css', 'javascript'] },
+  { id: 5, image: Piiquante, title: 'Hot-takes', description: 'API de like et partage de sauces pimentées réalisée en Node.js et JavaScript', titleEn: 'Hot-takes', descriptionEn: 'API for liking and sharing spicy sauces created with Node.js and JavaScript', github: 'https://github.com/AurelienAllenic/hot-takes', demo: '', figma: '', folder: [], technologies: ['javascript', 'nodejs'] },
+  { id: 6, image: Groupomania, title: 'Groupomania', description: "Réseau social d'entreprise réalisé avec React.js et Node.js", titleEn: 'Groupomania', descriptionEn: "Company social network created with React.js and Node.js", github: 'https://github.com/AurelienAllenic/groupomania/tree/develop', demo: '', figma: '', folder: [], technologies: ['reactjs', 'nodejs'] },
 ];
 
 export const openclassrooms2 = [
-  {
-    id: 1,
-    image: "/assets/portfolio/gameon.webp",
-    title: "GameOn, Gestion de formulaire avec Regex en Javascript",
-    titleEn: "GameOn, Handling forms with Regex in Javascript",
-    github: "https://github.com/AurelienAllenic/GameOn-website-FR",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["javascript", "html", "css"],
-  },
-  {
-    id: 2,
-    image: "/assets/portfolio/fisheye.webp",
-    title:
-      "Fisheye, site accessible pour une plateforme de photographes en javascript",
-    titleEn: "Fisheye, Creating a photographe site accessible in javascript",
-    github: "https://github.com/AurelienAllenic/Front-End-Fisheye",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["javascript", "html", "css"],
-  },
-  {
-    id: 3,
-    image: "/assets/portfolio/plats.webp",
-    title:
-      "Les petits plats, projet de développement d'algorithmes de recherche en javascript",
-    titleEn: "Les petits plats, algorithmic search project in javascript",
-    github: "https://github.com/AurelienAllenic/les_petits_plats",
-    demo: "https://aurelienallenic.github.io/les_petits_plats/",
-    figma: "",
-    folder: [],
-    technologies: ["javascript", "html", "css"],
-  },
-  {
-    id: 4,
-    image: "/assets/portfolio/kasa.jpeg",
-    title: "Kasa, projet de site de location d'appartement en reactJs",
-    titleEn:
-      "Kasa, project of creating an apartment rental online website in reactJs",
-    github: "https://github.com/AurelienAllenic/kasa_p11",
-    demo: "https://aurelienallenic.github.io/kasa_p11/",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs"],
-  },
-  {
-    id: 5,
-    image: "/assets/portfolio/learnhome.jpeg",
-    title:
-      "LearnHome, projet de maquettage via figma, de création de users stories et de diagrammes de cas d'usages",
-    titleEn:
-      "LearnHome, project of figma, creation of user stories and use case diagrams",
-    github: "",
-    demo: "",
-    figma:
-      "https://www.figma.com/file/AS6HKjnwIh1bpK0SZE90GJ/learnHome?type=design&node-id=0-1&mode=design",
-    folder: [],
-    technologies: ["userstories", "figma"],
-  },
-  {
-    id: 6,
-    image: "/assets/portfolio/wealthealth.jpeg",
-    title:
-      "WealthHealth, refonte en reactJs à partir d'un code jQuery d'un site d'ajout d'employés utilisant react redux",
-    titleEn:
-      "WealthHealth, refactoring in reactJs from a jQuery code a site consisting of adding employees using react redux",
-    github: "https://github.com/AurelienAllenic/wealthhealth-op-p14",
-    demo: "https://aurelienallenic.github.io/wealthhealth-op-p14/",
-    figma: "",
-    folder: [],
-    technologies: ["jquery"],
-  },
-  {
-    id: 7,
-    image: "/assets/portfolio/sportsee.jpeg",
-    title:
-      "Sportsee, site FullStack ReactJs + nodeJs permettant de suivre des statistiques sportives quotidiennes via des graphiques recharts",
-    titleEn:
-      "Sportsee, FullStack ReactJs + nodeJs website that allows you to track your daily sport statistics using recharts",
-    github: "https://github.com/AurelienAllenic/sportsee",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "nodejs"],
-  },
-  {
-    id: 8,
-    image: "/assets/portfolio/argentBank.jpeg",
-    title:
-      "ArgentBank, site FullStack ReactJs + nodeJs qui permet à l'utilisateur de se conncter à son compte bancaire et d'éditer son nom d'utilisateur",
-    titleEn:
-      "ArgentBank, FullStack ReactJs + nodeJs website that allows you to connect to your bank account and edit your username",
-    github: "https://github.com/AurelienAllenic/argent-bank",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "nodejs"],
-  },
+  { id: 1, image: GameOn, title: 'GameOn', description: 'Gestion de formulaire avec Regex en JavaScript', titleEn: 'GameOn', descriptionEn: 'Form management with Regex in JavaScript', github: 'https://github.com/AurelienAllenic/GameOn-website-FR', demo: '', figma: '', folder: [], technologies: ['javascript', 'html', 'css'] },
+  { id: 2, image: Fisheye, title: 'Fisheye', description: 'Site accessible pour une plateforme de photographes en JavaScript', titleEn: 'Fisheye', descriptionEn: 'Accessible website for a photographer platform created in JavaScript', github: 'https://github.com/AurelienAllenic/Front-End-Fisheye', demo: '', figma: '', folder: [], technologies: ['javascript', 'html', 'css'] },
+  { id: 3, image: Plats, title: 'Les petits plats', description: "Projet de développement d'algorithmes de recherche en JavaScript", titleEn: 'Les petits plats', descriptionEn: 'Search algorithm development project in JavaScript', github: 'https://github.com/AurelienAllenic/les_petits_plats', demo: 'https://aurelienallenic.github.io/les_petits_plats/', figma: '', folder: [], technologies: ['javascript', 'html', 'css'] },
+  { id: 4, image: Kasa, title: 'Kasa', description: "Projet de site de location d'appartement en React.js", titleEn: 'Kasa', descriptionEn: 'Apartment rental website project created in React.js', github: 'https://github.com/AurelienAllenic/kasa_p11', demo: 'https://aurelienallenic.github.io/kasa_p11/', figma: '', folder: [], technologies: ['reactjs'] },
+  { id: 5, image: LearnHome, title: 'LearnHome', description: "Projet de maquettage via Figma, de création de user stories et de diagrammes de cas d'usages", titleEn: 'LearnHome', descriptionEn: 'Figma mockup project, creation of user stories and use case diagrams', github: '', demo: '', figma: 'https://www.figma.com/file/AS6HKjnwIh1bpK0SZE90GJ/learnHome?type=design&node-id=0-1&mode=design', folder: [], technologies: ['userstories', 'figma'] },
+  { id: 6, image: Wealthealth, title: 'WealthHealth', description: "Refonte en React.js à partir d'un code jQuery d'un site d'ajout d'employés utilisant React Redux", titleEn: 'WealthHealth', descriptionEn: 'Refactoring in React.js from jQuery code of an employee management website using React Redux', github: 'https://github.com/AurelienAllenic/wealthhealth-op-p14', demo: 'https://aurelienallenic.github.io/wealthhealth-op-p14/', figma: '', folder: [], technologies: ['jquery'] },
+  { id: 7, image: Sportsee, title: 'Sportsee', description: 'Site FullStack React.js + Node.js permettant de suivre des statistiques sportives quotidiennes via des graphiques Recharts', titleEn: 'Sportsee', descriptionEn: 'FullStack React.js + Node.js website allowing to track daily sports statistics via Recharts graphs', github: 'https://github.com/AurelienAllenic/sportsee', demo: '', figma: '', folder: [], technologies: ['reactjs', 'nodejs'] },
+  { id: 8, image: ArgentBank, title: 'ArgentBank', description: "Site FullStack React.js + Node.js qui permet à l'utilisateur de se connecter à son compte bancaire et d'éditer son nom d'utilisateur", titleEn: 'ArgentBank', descriptionEn: 'FullStack React.js + Node.js website allowing users to connect to their bank account and edit their username', github: 'https://github.com/AurelienAllenic/argent-bank', demo: '', figma: '', folder: [], technologies: ['reactjs', 'nodejs'] },
 ];
+
 export const openclassrooms3 = [
-  {
-    id: 1,
-    image: "/assets/portfolio/booksToScrape.jpeg",
-    title:
-      "BooksToScrape, Scrapper pour suivre les prix des livres chez un revendeur en Python.",
-    titleEn:
-      "GameOn, Scrapper to follow the price of books at a bookstore in Python.",
-    github: "https://github.com/AurelienAllenic/BooksOnline---python---p1",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["python"],
-  },
-  {
-    id: 2,
-    image: "/assets/portfolio/homeSkolar.jpeg",
-    title:
-      "HomeSkolar, Création d'un cahier des charges et d'un backlog product pour une association de soutien scolaire",
-    titleEn:
-      "HomeSkolar, Creation of a project plan and backlog product for a school support association",
-    github: "",
-    demo: "",
-    figma: "",
-    folder: [
-      {
-        id: 1,
-        title: "Spécifications",
-        titleEn: "plan",
-        link: "/assets/HomeSkolar/cahier_des_charges.pdf",
-      },
-      {
-        id: 2,
-        title: "backlog",
-        titleEn: "backlog",
-        link: "/assets/HomeSkolar/backlog_product.pdf",
-      },
-    ],
-    technologies: ["backlog"],
-  },
-  {
-    id: 3,
-    image: "/assets/portfolio/chessTournament.jpeg",
-    title:
-      "ChessTournament, algorithme de gestion de tournois d'échecs en Python",
-    titleEn: "ChessTournament, algorithmic chess tournament project in python",
-    github: "https://github.com/AurelienAllenic/chessTournament-p4-python",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["python"],
-  },
-  {
-    id: 4,
-    image: "/assets/portfolio/justStreamIt.jpeg",
-    title: "JustStreamIt, Site de streaming réalisé avec django et javascript",
-    titleEn: "JustStreamIt, Online streaming site with django and javascript",
-    github: "https://github.com/AurelienAllenic/justStreamIt-p6-OP",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["django", "javascript", "html", "twig"],
-  },
-  {
-    id: 5,
-    image: "/assets/portfolio/algoInvest&Trade.jpeg",
-    title:
-      "AlgoInvest&Trade, Optimisation d'investissmeent à l'aide d'algorithmes Python",
-    titleEn:
-      "AlgoInvest&Trade, Optimization of investment with Python algorithms",
-    github: "https://github.com/AurelienAllenic/AlgoInvest-Trade-OP-P7",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["python"],
-  },
-  {
-    id: 6,
-    image: "/assets/portfolio/litRevu.jpeg",
-    title:
-      "LitRevu, Projet django qui permet aux utilisateurs de poster des critiques ou des demandes de critiques ainsi que suivre des uilisateurs.",
-    titleEn:
-      "LitRevu, django project that allows users to post reviews or request reviews and track users.",
-    github: "https://github.com/AurelienAllenic/LITRevu---P9",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["django", "html", "css", "twig"],
-  },
-  {
-    id: 7,
-    image: "/assets/portfolio/softDesk.jpeg",
-    title:
-      "SoftDesk, Développement d'une API RESTful avec Django Rest Framework pour remonter et suivre des problèmes techniques en B2B.",
-    titleEn:
-      "SoftDesk, Développement d'une API RESTful avec Django Rest Framework pour remonter et suivre des problèmes techniques en B2B.",
-    github: "https://github.com/AurelienAllenic/softDesk_OP-P10",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["django rest", "django"],
-  },
-  {
-    id: 8,
-    image: "/assets/portfolio/gudLft.jpeg",
-    title:
-      "GudLft, projet de testing d'une api flask pour des réservations de places en compétitions sportives.",
-    titleEn:
-      "GudLft, project of testing a flask api for sport performance reservations.",
-    github: "https://github.com/AurelienAllenic/GudLft-OP-P11",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["django", "flask", "pytest"],
-  },
-  {
-    id: 9,
-    image: "/assets/portfolio/epic_events.webp",
-    title:
-      "Epic Events, développement d'un backend sécurisé avec Python et SQL dans le domaine de l'évenementiel",
-    titleEn:
-      "Epic Events, development of a secure backend with Python and SQL in the event management field",
-    github: "https://github.com/AurelienAllenic/epic_events---P12",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["python", "sql", "sentry"],
-  },
-  {
-    id: 10,
-    image: "/assets/portfolio/orange.webp",
-    title:
-      "Orange County Lettings, correction de bugs, testing, logging avec Sentry, documentation avec Read The Docs et Spynx. Création d'un pipeline CI/CD avec GitHub Actions, Render et Docker",
-    titleEn:
-      "Orange County Lettings, bugs correction, testing, logging with Sentry, documentation with Read The Docs and Sphinx. Creation of a CI/CD pipeline with GitHub Actions, Render and Docker",
-    github: "https://github.com/AurelienAllenic/Python-OC-Lettings-FR",
-    demo: "",
-    figma: "",
-    folder: [],
-    technologies: ["sentry", "pipeline ci/cd", "docker"],
-  },
+  { id: 1, image: BooksToScrape, title: 'BooksToScrape', description: 'Scraper pour suivre les prix des livres chez un revendeur en Python', titleEn: 'BooksToScrape', descriptionEn: 'Scraper to track book prices at a retailer in Python', github: 'https://github.com/AurelienAllenic/BooksOnline---python---p1', demo: '', figma: '', folder: [], technologies: ['python'] },
+  { id: 2, image: HomeSkolar, title: 'HomeSkolar', description: "Création d'un cahier des charges et d'un backlog product pour une association de soutien scolaire", titleEn: 'HomeSkolar', descriptionEn: 'Creation of a specifications document and product backlog for a school support association', github: '', demo: '', figma: '', folder: [{ id: 1, title: 'Spécifications', titleEn: 'Specifications', link: CahierDesCharges }, { id: 2, title: 'Backlog', titleEn: 'Backlog', link: BacklogProduit }], technologies: ['backlog'] },
+  { id: 3, image: ChessTournament, title: 'ChessTournament', description: "Algorithme de gestion de tournois d'échecs en Python", titleEn: 'ChessTournament', descriptionEn: 'Chess tournament management algorithm in Python', github: 'https://github.com/AurelienAllenic/chessTournament-p4-python', demo: '', figma: '', folder: [], technologies: ['python'] },
+  { id: 4, image: JustStreamIt, title: 'JustStreamIt', description: 'Site de streaming réalisé avec Django et JavaScript', titleEn: 'JustStreamIt', descriptionEn: 'Streaming website created with Django and JavaScript', github: 'https://github.com/AurelienAllenic/justStreamIt-p6-OP', demo: '', figma: '', folder: [], technologies: ['django', 'javascript', 'html', 'twig'] },
+  { id: 5, image: AlgoInvestAndTrade, title: 'AlgoInvest&Trade', description: "Optimisation d'investissement à l'aide d'algorithmes Python", titleEn: 'AlgoInvest&Trade', descriptionEn: 'Investment optimization using Python algorithms', github: 'https://github.com/AurelienAllenic/AlgoInvest-Trade-OP-P7', demo: '', figma: '', folder: [], technologies: ['python'] },
+  { id: 6, image: LitRevu, title: 'LitRevu', description: 'Projet Django qui permet aux utilisateurs de poster des critiques ou des demandes de critiques ainsi que suivre des utilisateurs', titleEn: 'LitRevu', descriptionEn: 'Django project allowing users to post reviews or review requests and follow users', github: 'https://github.com/AurelienAllenic/LITRevu---P9', demo: '', figma: '', folder: [], technologies: ['django', 'html', 'css', 'twig'] },
+  { id: 7, image: SoftDesk, title: 'SoftDesk', description: "Développement d'une API RESTful avec Django Rest Framework pour remonter et suivre des problèmes techniques en B2B", titleEn: 'SoftDesk', descriptionEn: 'Development of a RESTful API with Django Rest Framework to report and track technical issues in B2B', github: 'https://github.com/AurelienAllenic/softDesk_OP-P10', demo: '', figma: '', folder: [], technologies: ['django rest', 'django'] },
+  { id: 8, image: GudLft, title: 'GudLft', description: "Projet de testing d'une API Flask pour des réservations de places en compétitions sportives", titleEn: 'GudLft', descriptionEn: 'Flask API testing project for seat reservations in sports competitions', github: 'https://github.com/AurelienAllenic/GudLft-OP-P11', demo: '', figma: '', folder: [], technologies: ['django', 'flask', 'pytest'] },
+  { id: 9, image: EpicEvents, title: 'Epic Events', description: "Développement d'un backend sécurisé avec Python et SQL dans le domaine de l'événementiel", titleEn: 'Epic Events', descriptionEn: 'Development of a secure backend with Python and SQL in the event industry', github: 'https://github.com/AurelienAllenic/epic_events---P12', demo: '', figma: '', folder: [], technologies: ['python', 'sql', 'sentry'] },
+  { id: 10, image: Orange, title: 'Orange County Lettings', description: "Correction de bugs, testing, logging avec Sentry, documentation avec Read The Docs et Sphinx. Création d'un pipeline CI/CD avec GitHub Actions, Render et Docker", titleEn: 'Orange County Lettings', descriptionEn: 'Bug fixes, testing, logging with Sentry, documentation with Read The Docs and Sphinx. Creation of a CI/CD pipeline with GitHub Actions, Render and Docker', github: 'https://github.com/AurelienAllenic/Python-OC-Lettings-FR', demo: '', figma: '', folder: [], technologies: ['sentry', 'pipeline ci/cd', 'docker'] },
 ];
+
 export const projects = [
-  {
-    id: 1,
-    image: "/assets/portfolio/paro.webp",
-    title:
-      "paroxx.com : projet de site vitrine pour l'artiste ParoXX réalisé avec ReactJs / Vite et nodeJs",
-    titleEn:
-      "paroxx.com : project of a website for the artist ParoXX created with ReactJs / Vit and nodeJs",
-    github: "",
-    demo: "https://paroxx.com",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "scss", "nodejs"],
-  },
-  {
-    id: 2,
-    image: "/assets/portfolio/claquettes.webp",
-    title:
-      "claquettes-swing.fr : participation à la création du front en ReactJs et au déploiement",
-    titleEn:
-      "claquettes-swing.fr : participation to the front creation in ReactJs and to the deployment",
-    github: "",
-    demo: "https://claquettes-swing.fr",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "scss", "twig"],
-  },
-  {
-    id: 3,
-    image: "/assets/portfolio/linconnu.webp",
-    title:
-      "linconnu-magic.com : Création d'un site web de magie à destination du public en ReactJs",
-    titleEn:
-      "linconnu-magic.com : Creation of a magic website aiming the public in ReactJs",
-    github: "",
-    demo: "https://linconnu-magic.com",
-    figma: "",
-    folder: [],
-    technologies: ["reactjs", "styled-components"],
-  },
+  { id: 1, image: Paro, title: 'Paro', description: "Projet de site vitrine pour l'artiste Paro réalisé avec React.js / Vite", titleEn: 'Paro', descriptionEn: 'Showcase website project for the artist Paro created with React.js / Vite', github: '', demo: 'https://paro-musique.com', figma: '', folder: [], technologies: ['reactjs', 'scss', 'nodejs'] },
+  { id: 2, image: Ascent, title: 'Ascent', description: "Site vitrine à destination des milieux de l'architecture et du design réalisé en Next.js, totalement administrable par l'utilisateur", titleEn: 'Ascent', descriptionEn: 'Showcase website for architecture and design professionals created in Next.js, fully manageable by the user', github: 'https://github.com/AurelienAllenic/ascent', demo: 'https://ascent-six.vercel.app/', figma: 'https://www.figma.com/design/JCrWII2C9NFsQSyAgcwxfh/Ascent?node-id=0-1&t=wqqq5q2qzDiRfd0W-1', folder: [], technologies: ['nextjs', 'scss'] },
+  { id: 3, image: Claquettes, title: 'claquettes-swing.fr', description: 'Participation à la création du front en React.js et au déploiement', titleEn: 'claquettes-swing.fr', descriptionEn: 'Participation in front-end creation in React.js and deployment', github: '', demo: 'https://claquettes-swing.fr', figma: '', folder: [], technologies: ['reactjs', 'scss', 'twig'] },
+  { id: 4, image: Linconnu, title: 'linconnu-magic.com', description: "Création d'un site web de magie à destination du public en React.js", titleEn: 'linconnu-magic.com', descriptionEn: 'Creation of a magic website for the public created in React.js', github: '', demo: 'https://linconnu-magic.com', figma: '', folder: [], technologies: ['reactjs', 'styled-components'] },
+  { id: 5, image: PreviousAurelien, title: 'Précédente version du site', description: "Cette version précédente du site est réalisée en nextjs et inclut des modèles 3d intégrés via Three.js", titleEn: 'Previous version of the website', descriptionEn: 'This previous version of the website is created in Next.js and includes 3D models integrated via Three.js', github: 'https://github.com/AurelienAllenic/portfolio-next_aurelien', demo: 'https://portfolio-next-aurelien.vercel.app/', figma: '', folder: [], technologies: ['nextjs', 'scss', 'threejs'] },
+];
+
+export const solead = [
+  { id: 1, image: District, title: 'District', description: "J'ai participé à la refonte visuelle du projet. L'ensemble des pages de ce site d'immobilier ont été recréées visuellement par mes soins.", titleEn: 'District', descriptionEn: "I participated in the visual redesign of the project. All pages of this real estate website were visually recreated by me.", github: '', demo: 'https://district-immo.com', figma: '', folder: [], technologies: ['wordpress', 'css', 'php', 'javascript', 'html', 'jquery'] },
+  { id: 2, image: Alteys, title: 'Alteys', description: "Dans le cadre de ce site proposant des produits de collection et de magazines, j'ai participé à la création de pages de produits et de catégories de produit.", titleEn: 'Alteys', descriptionEn: "For this site offering collection products and magazines, I participated in the creation of product pages and product categories.", github: '', demo: 'https://www.alteyscollections.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'php', 'jquery'] },
+  { id: 3, image: OpticDuroc, title: 'Optic Duroc', description: "J'ai pu intervenir sur le design des pages de produit de ce site de matériel ophtalmologique.", titleEn: 'Optic Duroc', descriptionEn: "I worked on the design of the product pages for this ophthalmological equipment website.", github: '', demo: 'https://opticduroc.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 4, image: GillesEtBoissier, title: 'Gilles et Boissier', description: "Ce site propose du mobilier de luxe. Je suis intervenu sur des correctifs visuels portant sur l'ensemble du site et j'ai également créé des pages complètes pour ce projet.", titleEn: 'Gilles et Boissier', descriptionEn: "This site offers luxury furniture. I worked on visual fixes across the entire site and also created complete pages for this project.", github: '', demo: 'https://www.gillesetboissier.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 5, image: Norelive, title: 'Norelive', description: "Ce site a pour mission de mettre en avant les projets de l'entreprise d'évènementiel Norelive. J'ai réalisé from scratch, entièrement ce projet.", titleEn: 'Norelive', descriptionEn: "This site aims to showcase the projects of the events company Norelive. I built this project entirely from scratch.", github: '', demo: 'https://norelive.staging.prodsolead.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 6, image: PatrickRubinstein, title: 'Patrick Rubinstein', description: "Je suis intervenu sur cet site créé pour promouvoir les créations de l'artiste Patrick Rubinstein. J'ai réalisé différentes animations et j'ai pu participer à des correctifs concernant la visite immersive de ses œuvres.", titleEn: 'Patrick Rubinstein', descriptionEn: "I worked on this site created to promote the creations of the artist Patrick Rubinstein. I created various animations and participated in fixes for the immersive visit of his works.", github: '', demo: 'https://www.patrickrubinstein.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 7, image: EcoAlternativ, title: 'Eco Alternativ', description: "Ce projet de site vitrine de chauffagiste et d'expert en rénovation énergétique a été l'objet de modifications importantes au niveau de son style et de sa structure.", titleEn: 'Eco Alternativ', descriptionEn: "This showcase site project for a heating engineer and energy renovation expert underwent significant modifications to its style and structure.", github: '', demo: 'https://www.eco-alternativ-energies.fr/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 8, image: PierreGasly, title: 'Pierre Gasly', description: "Je suis intervenu sur différentes parties du site du coureur automobile Pierre Gasly. Ces correctifs étaient principalement axés autour de correctifs et améliorations visuelles.", titleEn: 'Pierre Gasly', descriptionEn: "I worked on various parts of the racing driver Pierre Gasly's website. These fixes were mainly focused on visual corrections and improvements.", github: '', demo: 'https://www.pierregasly.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 9, image: Eliebenhamou, title: 'Elie Benhamou', description: "J'ai réalisé ce projet de site de pompes funèbres from scratch.", titleEn: 'Elie Benhamou', descriptionEn: "I built this funeral services website project from scratch.", github: '', demo: 'https://eliebenhamou.com/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 10, image: LaCommune, title: 'La Commune', description: "J'ai créé des menus de restaurants pour ce projet qui propose des food court.", titleEn: 'La Commune', descriptionEn: "I created restaurant menus for this project offering food courts.", github: '', demo: 'https://lacommune.co/menu/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery'] },
+  { id: 11, image: Anavie, title: 'Anavie', description: "Site d'assurance santé, emprunteur, épargne et retraite", titleEn: 'Anavie', descriptionEn: "Health insurance, borrower, savings and retirement site", github: '', demo: 'https://anavie.fr/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery', 'php'] },
+  { id: 12, image: RollerGrill, title: 'RollerGrill International', description: "Fabricant français d'équipements de cuisine professionnelle depuis 1947.", titleEn: 'RollerGrill International', descriptionEn: "French manufacturer of professional kitchen equipment since 1947.", github: '', demo: 'https://www.rollergrill-international.com/fr/', figma: '', folder: [], technologies: ['wordpress', 'html', 'css', 'javascript', 'jquery', 'php'] },
 ];

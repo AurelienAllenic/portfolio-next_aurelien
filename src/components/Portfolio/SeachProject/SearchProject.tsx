@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { StaticImageData } from 'next/image';
-import { openclassrooms1, openclassrooms2, openclassrooms3, projects } from "../../Data";
+import { openclassrooms1, openclassrooms2, openclassrooms3, projects, solead } from "../../Data";
 import CardSection from '../CardSection';
 import styles from './searchProject.module.scss';
 import { useLanguage } from '@/components/Context/LanguageContext';
@@ -12,7 +12,7 @@ import { ProjectData } from '../types';
 const SearchProject: React.FC = () => {
   const { language } = useLanguage();
   // Combinaison de tous les projets en une seule liste de base
-  const baseAllProjects: ProjectData[] = [...openclassrooms1, ...openclassrooms2, ...openclassrooms3, ...projects] as ProjectData[];
+  const baseAllProjects: ProjectData[] = [...openclassrooms1, ...openclassrooms2, ...openclassrooms3, ...solead, ...projects] as ProjectData[];
   const [searchData, setSearchData] = useState<ProjectData[]>(baseAllProjects);
   const [searchValue, setSearchValue] = useState<string>('');
   const [filterSelected, setFilterSelected] = useState<string[]>([]);

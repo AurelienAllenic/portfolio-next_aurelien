@@ -9,6 +9,8 @@ import ReactFormation from "@/components/Portfolio/ReactFormation";
 import "./page.scss";
 import DevFormation from "@/components/Portfolio/DevFormation";
 import PersoProjects from "@/components/Portfolio/PersoProjects";
+import SoleadFormation from "@/components/Portfolio/SoleadFormation";
+import PortfolioHeader from "@/components/Portfolio/PortfolioHeader";
 import Contact from "@/components/Contact/Contact";
 import { LanguageProvider } from "@/components/Context/LanguageContext";
 import { Suspense } from "react";
@@ -23,6 +25,8 @@ export default function Home() {
           <About />
           <CvLetter />
           <Programmation />
+          <PortfolioHeader />
+          <SoleadFormation />
           <PythonFormation />
           <ReactFormation />
           <DevFormation />

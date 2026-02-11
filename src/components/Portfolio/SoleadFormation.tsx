@@ -2,27 +2,29 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { openclassrooms3 } from "../Data";
+import { solead } from "../Data";
 import CardSection from './CardSection';
 import styles from "./portfolio.module.scss";
 import { useLanguage } from '../Context/LanguageContext';
 import { ProjectData } from './types';
 
-interface PythonFormationProps {}
+interface LanguageContextType {
+  language: 'FR' | 'EN';
+}
 
-const PythonFormation: React.FC<PythonFormationProps> = () => {
+const SoleadFormation: React.FC = () => {
   const [isopen, setIsOpen] = useState<boolean>(false);
-  const {language} = useLanguage()
-  const IMG = openclassrooms3[0].image;
+  const { language } = useLanguage() as LanguageContextType;
+  const IMG = solead[0]?.image ?? '';
 
   return (
     <>
-      <a className={styles.anchor} id="formation-python"></a>
-      <section className={`${styles.container_portfolio}`} id="formation-python">
+      <a className={styles.anchor} id="projets-solead"></a>
+      <section className={`${styles.container_portfolio}`} id="projets-solead">
         <div className={styles.container_title_img} style={{ position: 'relative' }}>
           <Image
             src={IMG}
-            alt="Background Python Formation"
+            alt="Projets Solead"
             fill
             style={{
               filter: 'blur(3px)',
@@ -30,7 +32,7 @@ const PythonFormation: React.FC<PythonFormationProps> = () => {
               objectPosition: 'center',
               zIndex: 0,
             }}
-            quality={75} // Réduit la qualité pour optimiser
+            quality={75}
           />
           <div
             style={{
@@ -43,25 +45,17 @@ const PythonFormation: React.FC<PythonFormationProps> = () => {
               zIndex: 1,
             }}
           />
-          <div
-            style={{
-              position: 'relative',
-              zIndex: 2,
-            }}
-          >
-            <div
-              onClick={() => setIsOpen(!isopen)}
-              className={styles.container_arrow_title}
-            >
+          <div style={{ position: 'relative', zIndex: 2 }}>
+            <div onClick={() => setIsOpen(!isopen)} className={styles.container_arrow_title}>
               <h1 className={styles.main_title_portfolio}>
-                {language === 'FR' ? 'Formation Python' : 'Python formation'}
+                {language === 'FR' ? 'Projets Solead' : 'Solead Projects'}
               </h1>
             </div>
           </div>
         </div>
         {isopen && (
           <article className={styles.container_projects}>
-            <CardSection datas={openclassrooms3 as ProjectData[]} />
+            <CardSection datas={solead as ProjectData[]} />
           </article>
         )}
       </section>
@@ -69,4 +63,4 @@ const PythonFormation: React.FC<PythonFormationProps> = () => {
   );
 };
 
-export default PythonFormation;
+export default SoleadFormation;
