@@ -272,7 +272,7 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
             
             <p className={styles.content_single_project}>{language === 'FR' ? title : titleEn}</p>
             <div className={styles.container_links_portfolio}>
-              {Array.isArray(folder) ? (
+              {Array.isArray(folder) && folder.length > 0 ? (
                 folder.map((file: FolderData, idx: number) => (
                   <a key={`${file.id}-${idx}`} href={file.link} target="_blank" className={styles.link_single_project}>
                     {language === 'FR' ? file.title : file.titleEn}
@@ -280,12 +280,21 @@ const CardSection: React.FC<CardSectionProps> = ({ datas }) => {
                 ))
               ) : (
                 <>
-                  {github !== '' && demo !== '' ? (
-                    <a href={github} target="_blank" className={styles.link_single_project}>Github</a>
-                  ) : github !== '' ? (
-                    <a href={github} target="_blank" className={styles.link_single_project_figma}>Github</a>
-                  ) : null}
-                  {demo !== '' && <a href={demo} target="_blank" className={styles.link_single_project}>{language === 'FR' ? 'Démo en direct' : 'Live Demo'}</a>}
+                  {github !== '' && (
+                    <a href={github} target="_blank" className={demo !== '' || figma !== '' ? styles.link_single_project : styles.link_single_project_figma}>
+                      Github
+                    </a>
+                  )}
+                  {demo !== '' && (
+                    <a href={demo} target="_blank" className={styles.link_single_project}>
+                      {language === 'FR' ? 'Démo en direct' : 'Live Demo'}
+                    </a>
+                  )}
+                  {figma !== '' && (
+                    <a href={figma} target="_blank" className={styles.link_single_project_figma}>
+                      Figma
+                    </a>
+                  )}
                 </>
               )}
             </div>
